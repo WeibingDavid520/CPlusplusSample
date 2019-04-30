@@ -12,10 +12,10 @@
 #include "Calculator.hpp"
 
 @interface CppObjCMM: NSObject
-    //-(CppObjCMM*)init;
+    -(CppObjCMM*)init:(NSInteger)a andOtherInt:(NSInteger) b;
     -(NSInteger) Add: (NSInteger)a andOtherInt:(NSInteger) b;
     -(NSInteger) Minus: (NSInteger)a andOtherInt: (NSInteger) b;
-   // @property Calculator *cal;
+   @property Elementary::Math::Calculator *cal;
 @end
 
 #endif /* CppObjCMM_h */

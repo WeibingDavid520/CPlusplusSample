@@ -15,23 +15,25 @@
 
 @implementation CppObjCMM
 
-//-(CppObjCMM *)init{
-//    if(!_cal)
-//    {
-//        _cal = new Calculator();
-//    }
-//}
+-(CppObjCMM *)init:(NSInteger)a andOtherInt:(NSInteger) b{
+    if(!_cal)
+    {
+        _cal = new Elementary::Math::Calculator(a, b);
+    }
+    CppObjCMM * cppObjCmm =[[CppObjCMM alloc] init];
+    return cppObjCmm;
+}
 
 -(NSInteger) Add: (NSInteger)a andOtherInt:(NSInteger) b
 {
-    Elementary::Math::Calculator *cal = new Elementary::Math::Calculator();
-    return cal->Add(a, b);
+    //Elementary::Math::Calculator *cal = new Elementary::Math::Calculator();
+    return _cal->Add(a, b);
 }
 
 -(NSInteger) Minus: (NSInteger)a andOtherInt: (NSInteger) b
 {
-    Elementary::Math::Calculator *cal = new Elementary::Math::Calculator();
-    return cal->Minus(a, b);
+    //Elementary::Math::Calculator *cal = new Elementary::Math::Calculator();
+    return _cal->Minus(a, b);
 }
 
 @end

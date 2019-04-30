@@ -17,9 +17,12 @@ namespace Elementary
         class Calculator
         {
         public:
-            Calculator(){};
+            Calculator(int a, int b);
             int Add(int a, int b);
             int Minus(int a, int b);
+        private:
+            int aa;
+            int bb;
         };
     }
 }

@@ -11,6 +11,12 @@ namespace Elementary
 {
     namespace Math
     {
+        Calculator::Calculator(int a, int b)
+        {
+            aa = a;
+            bb = b;
+        }
+        
         int Calculator::Add(int a, int b)
         {
             return a + b;
