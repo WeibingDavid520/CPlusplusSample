@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+//This is an example of how to use c++ in the objective c project
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
