@@ -14,14 +14,9 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *btf;
 
-//@property (weak, nonatomic) IBOutlet UIButton *minus;
-//@property (weak, nonatomic) IBOutlet UIButton *add;
-
 @property(strong, nonatomic)IBOutlet UILabel *minusResult;
 
 @property(strong, nonatomic)IBOutlet UILabel *addResult;
 
-
-//    -(IBAction)Add:(id)sender;
 @end
 
