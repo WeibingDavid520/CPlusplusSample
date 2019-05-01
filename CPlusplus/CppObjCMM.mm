@@ -20,6 +20,12 @@
     {
         _cal = new Elementary::Math::Calculator(a, b);
     }
+    
+    if(!_cal)
+    {
+        _cal = new Elementary::Math::Calculator(a);
+    }
+    
     CppObjCMM * cppObjCmm =[[CppObjCMM alloc] init];
     return cppObjCmm;
 }

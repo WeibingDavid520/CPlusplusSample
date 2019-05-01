@@ -11,6 +11,11 @@ namespace Elementary
 {
     namespace Math
     {
+        Calculator::Calculator(const int &a): aa(a)
+        {
+            std::cout << "THis is the constructor.";
+        }
+        
         Calculator::Calculator(int a, int b)
         {
             aa = a;

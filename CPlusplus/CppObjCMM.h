@@ -10,12 +10,19 @@
 #define CppObjCMM_h
 #import <Foundation/Foundation.h>
 #include "Calculator.hpp"
+#include "./upe/samples/upe/action.h"
 
 @interface CppObjCMM: NSObject
     -(CppObjCMM*)init:(NSInteger)a andOtherInt:(NSInteger) b;
     -(NSInteger) Add: (NSInteger)a andOtherInt:(NSInteger) b;
     -(NSInteger) Minus: (NSInteger)a andOtherInt: (NSInteger) b;
-   @property Elementary::Math::Calculator *cal;
+    @property Elementary::Math::Calculator *cal;
+    @property sample::upe::Action *action;
+    @property sample::upe::AuthenticationType * authenticationType;
+    @property sample::upe::AuthenticationOptions * authenticationOptions;
+    @property sample::upe::PolicyType * policyType;
+    @property sample::upe::ProfileOptions * profileOptions;
+
 @end
 
 #endif /* CppObjCMM_h */

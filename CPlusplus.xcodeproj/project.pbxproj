@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D8093DB42278A71A00BCEEC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8093DB32278A71A00BCEEC5 /* UIKit.framework */; };
+		D8093DC62278CD5C00BCEEC5 /* libsqlite3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8093DBA2278CD5C00BCEEC5 /* libsqlite3.a */; };
+		D8093DC82278CD5D00BCEEC5 /* libmip_core_static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8093DBC2278CD5C00BCEEC5 /* libmip_core_static.a */; };
+		D8093DCD2278CD5D00BCEEC5 /* libmip_upe_sdk_static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8093DC12278CD5C00BCEEC5 /* libmip_upe_sdk_static.a */; };
+		D8093DCF2278CD5D00BCEEC5 /* upe_sample in Frameworks */ = {isa = PBXBuildFile; fileRef = D8093DC32278CD5C00BCEEC5 /* upe_sample */; };
+		D8093DD02278CD5D00BCEEC5 /* libmip_telemetry_static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8093DC42278CD5C00BCEEC5 /* libmip_telemetry_static.a */; };
+		D8093DD12278CD5D00BCEEC5 /* libaria_ios_objc_cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8093DC52278CD5C00BCEEC5 /* libaria_ios_objc_cpp.a */; };
+		D8093DD32278E7CB00BCEEC5 /* upe in Resources */ = {isa = PBXBuildFile; fileRef = D8093DB52278CBED00BCEEC5 /* upe */; };
+		D8093DD42278E8FB00BCEEC5 /* upe in Sources */ = {isa = PBXBuildFile; fileRef = D8093DB52278CBED00BCEEC5 /* upe */; };
 		D8C6A4012277C06F004D6F69 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C6A4002277C06F004D6F69 /* AppDelegate.m */; };
 		D8C6A4042277C06F004D6F69 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C6A4032277C06F004D6F69 /* ViewController.m */; };
 		D8C6A4072277C06F004D6F69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C6A4052277C06F004D6F69 /* Main.storyboard */; };
@@ -39,6 +47,19 @@
 
 /* Begin PBXFileReference section */
 		D8093DB32278A71A00BCEEC5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D8093DB52278CBED00BCEEC5 /* upe */ = {isa = PBXFileReference; lastKnownFileType = folder; path = upe; sourceTree = "<group>"; };
+		D8093DBA2278CD5C00BCEEC5 /* libsqlite3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsqlite3.a; path = CPlusplus/upe/bins/debug/x86_64/libsqlite3.a; sourceTree = "<group>"; };
+		D8093DBB2278CD5C00BCEEC5 /* libmip_core.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmip_core.dylib; path = CPlusplus/upe/bins/debug/x86_64/libmip_core.dylib; sourceTree = "<group>"; };
+		D8093DBC2278CD5C00BCEEC5 /* libmip_core_static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmip_core_static.a; path = CPlusplus/upe/bins/debug/x86_64/libmip_core_static.a; sourceTree = "<group>"; };
+		D8093DBD2278CD5C00BCEEC5 /* libmip_upe_sdk.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmip_upe_sdk.dylib; path = CPlusplus/upe/bins/debug/x86_64/libmip_upe_sdk.dylib; sourceTree = "<group>"; };
+		D8093DBE2278CD5C00BCEEC5 /* libmip_core.dylib.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = libmip_core.dylib.dSYM; path = CPlusplus/upe/bins/debug/x86_64/libmip_core.dylib.dSYM; sourceTree = "<group>"; };
+		D8093DBF2278CD5C00BCEEC5 /* libmip_telemetry.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmip_telemetry.dylib; path = CPlusplus/upe/bins/debug/x86_64/libmip_telemetry.dylib; sourceTree = "<group>"; };
+		D8093DC02278CD5C00BCEEC5 /* libmip_telemetry.dylib.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = libmip_telemetry.dylib.dSYM; path = CPlusplus/upe/bins/debug/x86_64/libmip_telemetry.dylib.dSYM; sourceTree = "<group>"; };
+		D8093DC12278CD5C00BCEEC5 /* libmip_upe_sdk_static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmip_upe_sdk_static.a; path = CPlusplus/upe/bins/debug/x86_64/libmip_upe_sdk_static.a; sourceTree = "<group>"; };
+		D8093DC22278CD5C00BCEEC5 /* libmip_upe_sdk.dylib.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = libmip_upe_sdk.dylib.dSYM; path = CPlusplus/upe/bins/debug/x86_64/libmip_upe_sdk.dylib.dSYM; sourceTree = "<group>"; };
+		D8093DC32278CD5C00BCEEC5 /* upe_sample */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = upe_sample; path = CPlusplus/upe/bins/debug/x86_64/upe_sample; sourceTree = "<group>"; };
+		D8093DC42278CD5C00BCEEC5 /* libmip_telemetry_static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmip_telemetry_static.a; path = CPlusplus/upe/bins/debug/x86_64/libmip_telemetry_static.a; sourceTree = "<group>"; };
+		D8093DC52278CD5C00BCEEC5 /* libaria_ios_objc_cpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libaria_ios_objc_cpp.a; path = CPlusplus/upe/bins/debug/x86_64/libaria_ios_objc_cpp.a; sourceTree = "<group>"; };
 		D8C6A3FC2277C06F004D6F69 /* CPlusplus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPlusplus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C6A3FF2277C06F004D6F69 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D8C6A4002277C06F004D6F69 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -66,6 +87,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8093DC62278CD5C00BCEEC5 /* libsqlite3.a in Frameworks */,
+				D8093DC82278CD5D00BCEEC5 /* libmip_core_static.a in Frameworks */,
+				D8093DCD2278CD5D00BCEEC5 /* libmip_upe_sdk_static.a in Frameworks */,
+				D8093DCF2278CD5D00BCEEC5 /* upe_sample in Frameworks */,
+				D8093DD02278CD5D00BCEEC5 /* libmip_telemetry_static.a in Frameworks */,
+				D8093DD12278CD5D00BCEEC5 /* libaria_ios_objc_cpp.a in Frameworks */,
 				D8093DB42278A71A00BCEEC5 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +117,18 @@
 		D8093DB22278A71A00BCEEC5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D8093DC52278CD5C00BCEEC5 /* libaria_ios_objc_cpp.a */,
+				D8093DBC2278CD5C00BCEEC5 /* libmip_core_static.a */,
+				D8093DBB2278CD5C00BCEEC5 /* libmip_core.dylib */,
+				D8093DBE2278CD5C00BCEEC5 /* libmip_core.dylib.dSYM */,
+				D8093DC42278CD5C00BCEEC5 /* libmip_telemetry_static.a */,
+				D8093DBF2278CD5C00BCEEC5 /* libmip_telemetry.dylib */,
+				D8093DC02278CD5C00BCEEC5 /* libmip_telemetry.dylib.dSYM */,
+				D8093DC12278CD5C00BCEEC5 /* libmip_upe_sdk_static.a */,
+				D8093DBD2278CD5C00BCEEC5 /* libmip_upe_sdk.dylib */,
+				D8093DC22278CD5C00BCEEC5 /* libmip_upe_sdk.dylib.dSYM */,
+				D8093DBA2278CD5C00BCEEC5 /* libsqlite3.a */,
+				D8093DC32278CD5C00BCEEC5 /* upe_sample */,
 				D8093DB32278A71A00BCEEC5 /* UIKit.framework */,
 			);
 			name = Frameworks;
@@ -119,6 +158,7 @@
 		D8C6A3FE2277C06F004D6F69 /* CPlusplus */ = {
 			isa = PBXGroup;
 			children = (
+				D8093DB52278CBED00BCEEC5 /* upe */,
 				D8C6A3FF2277C06F004D6F69 /* AppDelegate.h */,
 				D8C6A4002277C06F004D6F69 /* AppDelegate.m */,
 				D8C6A4022277C06F004D6F69 /* ViewController.h */,
@@ -257,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8093DD32278E7CB00BCEEC5 /* upe in Resources */,
 				D8C6A40C2277C072004D6F69 /* LaunchScreen.storyboard in Resources */,
 				D8C6A4092277C072004D6F69 /* Assets.xcassets in Resources */,
 				D8C6A4072277C06F004D6F69 /* Main.storyboard in Resources */,
@@ -284,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8093DD42278E8FB00BCEEC5 /* upe in Sources */,
 				D8C6A4352277C36A004D6F69 /* CppObjCMM.mm in Sources */,
 				D8C6A4042277C06F004D6F69 /* ViewController.m in Sources */,
 				D8C6A4332277C0BE004D6F69 /* Calculator.cpp in Sources */,
@@ -395,11 +437,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/CPlusplus/upe/include/mip";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/CPlusplus/upe/bins/debug/x86_64";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/CPlusplus/upe/include/mip",
+					"$(PROJECT_DIR)/CPlusplus/upe/samples",
+				);
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "";
 			};
 			name = Debug;
 		};
@@ -449,10 +498,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/CPlusplus/upe/include/mip";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/CPlusplus/upe/bins/release/x86_64";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/CPlusplus/upe/include/mip",
+					"$(PROJECT_DIR)/CPlusplus/upe/samples",
+				);
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -468,9 +523,20 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CPlusplus/upe/bins/debug/x86_64",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.sample.CPlusplus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/CPlusplus/upe/samples",
+					"$(PROJECT_DIR)/CPlusplus/upe/include",
+					"$(PROJECT_DIR)/CPlusplus/upe/samples/common",
+					"$(PROJECT_DIR)/CPlusplus/upe/samples/consent",
+					"$(PROJECT_DIR)/CPlusplus/upe/samples/upe",
+				);
 			};
 			name = Debug;
 		};
@@ -485,9 +551,17 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CPlusplus/upe/bins/debug/x86_64",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.sample.CPlusplus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/CPlusplus/upe/samples/upe",
+					"$(PROJECT_DIR)/CPlusplus/upe/include/mip",
+				);
 			};
 			name = Release;
 		};

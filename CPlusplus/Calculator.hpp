@@ -10,6 +10,8 @@
 #define Calculator_hpp
 
 #include <stdio.h>
+#include<iostream>
+
 namespace Elementary
 {
     namespace Math
@@ -17,6 +19,7 @@ namespace Elementary
         class Calculator
         {
         public:
+            Calculator(const int& a);
             Calculator(int a, int b);
             int Add(int a, int b);
             int Minus(int a, int b);
