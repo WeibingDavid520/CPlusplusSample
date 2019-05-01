@@ -1,0 +1,52 @@
+#!python
+import sys
+
+Import("""
+    api_includes_dir
+    common_sample_lib
+    bins
+    upe_target_name
+    env
+    platform
+    resources
+    samples_dir
+""")
+
+includes_path = [
+    api_includes_dir,
+    samples_dir + '/common']
+
+src_files = Split("""
+    action.cpp
+    execution_state_impl.cpp
+    main.cpp
+    policy_profile_observer_impl.cpp
+""")
+
+upe_sample_env = env.Clone()
+upe_sample_env.Append(CPPPATH = includes_path)
+upe_sample_env.Append(LIBPATH= [bins])
+upe_sample_env.Append(LIBS= [upe_target_name, common_sample_lib])
+
+if platform == 'darwin':
+    upe_sample_env.Append(LINKFLAGS= ['-Wl,-rpath,@executable_path'])
+elif platform == 'linux2':
+    upe_sample_env.Append(LINKFLAGS= ['-Wl,-rpath-link,{0}'.format(Dir(bins).path)])
+    upe_sample_env.Append(RPATH= env.Literal('\\$$ORIGIN'))
+
+upe_sample_bin = upe_sample_env.Program('upe_sample', source = [src_files, resources])
+
+upe_sample_source = [
+    samples_dir + '/upe/action.cpp',
+    samples_dir + '/upe/action.h',
+    samples_dir + '/upe/execution_state_impl.cpp',
+    samples_dir + '/upe/execution_state_impl.h',
+    samples_dir + '/upe/main.cpp',
+    samples_dir + '/upe/policy_profile_observer_impl.cpp',
+    samples_dir + '/upe/policy_profile_observer_impl.h',
+    samples_dir + '/upe/protection_descriptor_impl.h',
+    samples_dir + '/upe/SConscript'
+]
+
+Return('upe_sample_bin', 'upe_sample_source')
+
